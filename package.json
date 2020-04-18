@@ -2,16 +2,18 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "10.2.0",
-    "npm": "6.13.6"
+  "engines":{
+    "node": "10.20.1",
+    "npm": "6.14.4"
   },
+  "homepage": "https://adityaraj95.github.io",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^2.2.0",
     "markdown-to-jsx": "^6.11.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,6 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

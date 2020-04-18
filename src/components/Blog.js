@@ -23,20 +23,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: 'My Work', url: '#' },
+  { title: 'Life', url: '#' },
   { title: 'Love', url: '#' },
   { title: 'Culture', url: '#' },
   { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Contact Me', url: '#' },
-  { title: 'Style', url: '#' },
+  { title: 'Contact', url: '#' },
 ];
 
 const mainFeaturedPost = {
   title: 'Title of a longer featured story by Annanya',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "Multiple lines of text straight from your head which shall serve alot of people and cure alot of things lol.",
   image: 'https://source.unsplash.com/random',
   imgText: 'main image description',
   linkText: 'Continue reading…',
@@ -47,7 +44,7 @@ const featuredPosts = [
     title: 'Featured post',
     date: 'Nov 12',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'Its 1 am already. wtf. Btw Idk if you will notice these messages in the dev website. If you dont than I guess it didnt get your attention. Which means you didnt like it :/ which means I need to do a better job. I really wanna be the best developer.',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
@@ -55,13 +52,13 @@ const featuredPosts = [
     title: 'Post title',
     date: 'Nov 11',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      'So thats why I try to attend as many summits and meetups I can in NYC. We have really interesting groups of really dope developers, closed groups. Most of them work either for amazon or facebook and they are the best developers in global market. I listen to them for hours and hours hoping I can learn a little bit from them. I really dont know what else to type lol',
     image: 'https://source.unsplash.com/random',
     imageText: 'Image Text',
   },
 ];
 
-const posts = [post1, post2, post3];
+const posts = ['Idk what to type', 'This is really taking some time', 'I am having alot of fun lol. I literally ran out of Ideas. So Imma copy paste shit now.'];
 
 const sidebar = {
   title: 'About',
@@ -88,7 +85,7 @@ export default function Blog() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Annanya Bhuyan" sections={sections} />
+        <Header title="Annanya ♥" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -97,7 +94,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="Some interesting article by Annanya" posts={posts} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
